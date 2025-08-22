@@ -1,5 +1,0 @@
-Installing Nextflow to: /Users/yunhuazhu/bin
-Found Java: openjdk version "17.0.16" 2025-07-15
-Downloading Nextflow...
-Nextflow binary installed to /Users/yunhuazhu/bin/nextflow
-install.nf.sh: line 68: /Users/yunhuazhu/.zshrc: Permission denied
