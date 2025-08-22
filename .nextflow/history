@@ -1,0 +1,2 @@
+2025-08-22 00:15:07	1.2s	nice_koch	OK	00000000000000000000000000000000	e7a04089-5689-4df5-9ed3-a13e7b5e3d6f	nextflow run main.nf -profile docker
+2025-08-22 00:17:47	318ms	reverent_agnesi	OK	00000000000000000000000000000000	e7a04089-5689-4df5-9ed3-a13e7b5e3d6f	nextflow run main.nf -profile docker -resume

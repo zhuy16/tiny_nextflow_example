@@ -1,0 +1,13 @@
++ set -euo pipefail
++ NF_DEST=/Users/yunhuazhu/bin
++ NF_BIN=/Users/yunhuazhu/bin/nextflow
++ ZSHRC=/Users/yunhuazhu/.zshrc
++ echo 'Installing Nextflow to: /Users/yunhuazhu/bin'
+Installing Nextflow to: /Users/yunhuazhu/bin
++ command -v java
++ java -version
++ echo 'Error: '\''java'\'' command is present but failed to run. On macOS this can happen when the Java runtime is not installed.'
+Error: 'java' command is present but failed to run. On macOS this can happen when the Java runtime is not installed.
++ echo 'Please install a JDK (e.g. '\''brew install openjdk@17'\'') and ensure '\''java -version'\'' prints a version, then rerun.'
+Please install a JDK (e.g. 'brew install openjdk@17') and ensure 'java -version' prints a version, then rerun.
++ exit 1
