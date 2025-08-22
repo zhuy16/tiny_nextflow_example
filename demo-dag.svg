@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="240" viewBox="0 0 800 240">
+  <style>
+    .node { fill: #f8f9fa; stroke: #2b2f3a; stroke-width: 1.5px; }
+    .label { font: 14px sans-serif; fill: #111827; }
+    .small { font: 12px sans-serif; fill: #374151; }
+    .arrow { stroke: #111827; stroke-width: 2px; fill: none; marker-end: url(#arrowhead); }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#111827" />
+    </marker>
+  </defs>
+
+  <!-- Channel.of (point) -->
+  <circle cx="120" cy="120" r="6" fill="#111827" />
+  <text x="120" y="145" text-anchor="middle" class="small">Channel.of</text>
+
+  <!-- QC node -->
+  <rect x="300" y="70" width="160" height="60" rx="6" ry="6" class="node" />
+  <text x="380" y="105" text-anchor="middle" class="label">QC</text>
+
+  <!-- End point -->
+  <circle cx="620" cy="120" r="6" fill="#111827" />
+
+  <!-- Edges -->
+  <path d="M126 120 L300 100" class="arrow" />
+  <path d="M460 100 L614 120" class="arrow" />
+
+</svg>
