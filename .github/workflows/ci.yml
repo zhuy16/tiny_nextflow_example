@@ -12,18 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
+      - name: Build Docker image
+        run: docker build -t tiny-nextflow-example .
 
-      - name: Install dependencies
-        run: |
-          python -m venv .venv
-          source .venv/bin/activate
-          pip install -r requirements.txt
+      - name: Run pytest in Docker
+        run: docker run --rm tiny-nextflow-example pytest -q tests/
 
-      - name: Run pytest
-        run: |
-          source .venv/bin/activate
-          pytest -q tests/
+      - name: Run Nextflow workflow in Docker
+        run: docker run --rm tiny-nextflow-example nextflow run main.nf -profile docker -with-dag dag.png
