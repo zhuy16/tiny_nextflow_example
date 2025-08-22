@@ -2,7 +2,7 @@ FROM python:3.10-slim
 
 # Install Nextflow dependencies
 RUN apt-get update && \
-    apt-get install -y openjdk-17-jre-headless curl && \
+    apt-get install -y default-jre-headless curl && \
     rm -rf /var/lib/apt/lists/*
 
 # Install Nextflow
