@@ -1,5 +1,5 @@
 # tiny_nextflow_example
-# tiny_repo
+
 Reproducible demo: toy ATAC/RNA steps (mock), Nextflow + Docker, pytest tests, schema checks.
 
 ## Run
