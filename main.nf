@@ -12,11 +12,12 @@ process QC {
   """
   set -euo pipefail
   tmp=${sample}.qc.txt.tmp
-  python - <<'PY' > $tmp
-import random, sys; random.seed(42)
-print(f"SAMPLE={r'$sample'}; READS1={r'$reads1'}; READS2={r'$reads2'}; OK=1")
+  python - <<'PY' > \$tmp
+import random, sys
+random.seed(42)
+print("SAMPLE=%s; READS1=%s; READS2=%s; OK=1" % ("${sample}", "${reads1}", "${reads2}"))
 PY
-  mv $tmp ${sample}.qc.txt
+  mv \$tmp ${sample}.qc.txt
   """
 }
 
