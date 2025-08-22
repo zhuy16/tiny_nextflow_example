@@ -1,0 +1,6 @@
+.venv
+.pytest_cache/
+tests/__pycache__/
+.nextflow/
+.nextflow.log*
+.brewer_openjdk_install*
