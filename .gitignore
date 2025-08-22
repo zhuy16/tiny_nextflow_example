@@ -3,5 +3,10 @@
 tests/__pycache__/
 .nextflow/
 .nextflow.log*
-.brewer_openjdk_install*
+work/
+preparation/install.log
+preparation/install.run.log
+preparation/install.trace
 brewer_openjdk_install.log
+.DS_Store
+*.tmp
